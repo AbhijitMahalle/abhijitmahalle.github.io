@@ -1,0 +1,44 @@
+/* .panel {
+    position: relative;
+} 
+
+.panel:target {
+    padding-top: 80px;
+} */
+
+.img-responsive {
+    max-width: 68%;
+    max-height: auto;
+}
+
+.panel {
+    background-color: #eef0f2;
+}
+
+section:before {
+    height: 70px;
+    content: "";
+    display:block;
+}
+
+footer:before {
+    height: 20px;
+    content: "";
+    display:block;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.list-group-item {
+    background-color: #eef0f2;
+}
+
+.card {
+    padding: 10px;
+}
