@@ -14,6 +14,7 @@
 
         <meta name="description" content="">
         <meta name="author" content="">
+	<link rel="icon" href="images/favicon.ico">
         <title>Abhijit Mahalle</title>
     </head>
     
@@ -55,14 +56,12 @@
 
         <div class="container">
             <section id="home">
-                <div class="row rounded-3 p-3">
+                <div class="row rounded-3 p-2">
                     <div class="col-md-3 col-sm-12">
                         <img src="images/bio.jpeg" alt="Portrait of Abhijit Mahalle" class="img-responsive rounded-circle mx-auto d-block">
                         <br>
-                        <div class="justify-content-center" align="center">                         
-<!--                             <a class="link zoom" href="https://scholar.google.com/citations?user=uI02O94AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google scholar</a> | 
-                            <a class="link zoom" href="https://orcid.org/0000-0002-9743-4264" target="_blank" rel="noopener noreferrer">ORCID</a> |  -->
-                            <a class="link zoom" href="https://github.com/abhijitmahalle" target="_blank" rel="noopener noreferrer">Github</a>
+                        <div class="justify-content-center" align="center">                       
+                            <a class="link zoom" href="https://github.com/abhijitmahalle" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-12">
@@ -72,7 +71,7 @@
                             I am a member of the <a href="https://prg.cs.umd.edu/" target="_blank" rel="noopener noreferrer">Perception and Robotics Group</a> at 
                             the University of Maryland. 
                         </p>
-                        <p>
+                        <p style="margin-bottom:2.1cm;">
                             I enjoy hiking and adventure sports.
                         </p>  
 			<h5>Technical Skills:</h5>
@@ -88,181 +87,146 @@
                     <div class="container">
                         <div class="row">
                             <div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
-                                <h5 class="card-header">AR tag detection and tracking</h5>
+                                <h5 class="card-header">AR-tag detection and tracking</h5>
 				<img class="card-img-top mt-2" src="images/thumbs/virtual_cube.gif" alt="">
                                 <div class="card-body">
                                     <p class="card-text">					    
                                     	Detected April tag by removing background using fast FFT and decoded it using homography.
 					Superimposed a custom image and placed a virtual cube on it using projection, calibration, and homography matrices.
-                                        </thead>
+					</thead>
                                     </p>
-                                    <a href="https://github.com/abhijitmahalle/AR-tag-detection" class="btn btn-primary">Details</a>
-                                </div>
+                                    <a href="https://github.com/abhijitmahalle/AR-tag-detection" class="btn btn-primary" target="_blank">Details</a>
+			    	</div>
                             </div>
 
                             <div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
                                 <h5 class="card-header">Lane detection</h5>
-                                <img class="card-img-top mt-2" src="https://github.com/abhijitmahalle/lane_detection/blob/master/gif/curved_lane_detection.gif" alt="">
+                                <img class="card-img-top mt-2" src="images/thumbs/curved_lane_detection.gif" alt="">
                                 <div class="card-body">                                    
                                     <p class="card-text">
                                         Detected lanes on straight and curved roads to mimic the Lane Departure Warning system in self-driving cars.
                                     </p>
-                                    <a href="https://github.com/abhijitmahalle/lane_detection" class="btn btn-primary">Details</a>
+                                    <a href="https://github.com/abhijitmahalle/lane-detection" class="btn btn-primary" target="_blank">Details</a>
                                     <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
                                 </div>
                             </div>
 		    	
-			<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
-                                <h5 class="card-header">Stereo Vision</h5>
-                                <img class="card-img-top mt-2" src="https://github.com/abhijitmahalle/stereo_vision/blob/master/results/curule/depth_heatmap.png" alt="Basic interface of the physically based word vector encoding visualization tool">
+			    <div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+                                <h5 class="card-header">Stereo-Vision</h5>
+                                <img class="card-img-top mt-2" src="images/thumbs/disparity_heatmap.png" alt="Basic interface of the physically based word vector encoding visualization tool">
                                 <div class="card-body">
                                     <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
                                     <p class="card-text">
                                         
                                     </p>
-                                    <a href="https://github.com/abhijitmahalle/stereo_vision" class="btn btn-primary">Details</a>
+                                    <a href="https://github.com/abhijitmahalle/stereo-vision" class="btn btn-primary" target="_blank">Details</a>
                                     <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
                                 </div>
                             </div>	
-		    
                         </div>
 			
-				    
                         <div class="row">
-                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
-                                <!--img class="card-img-top" src="..." alt="Card image cap"-->
-                                <h5 class="card-header">Adding shadows to a scene using CNN</h5>
-                                <div class="row d-flex justify-content-center text-center mt-2">
-                                    <figure>
-                                        <img src="shadowGan/11imageGrid.png" class="img-fluid mx-auto d-block">
-                                        <figcaption>Input to the model - scene without shadows; light source map; object depth map from 8 orthographic views; ground truth image</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-3 text-center">
-                                        <figure>
-                                            <img src="shadowGan/scene2_good_real.png" class="img-fluid mx-auto d-block">
-                                            <figcaption>Sample ground truth</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-3 text-center">
-                                        <figure>
-                                            <img src="shadowGan/scene2_good_fake.png" class="img-fluid mx-auto d-block">
-                                            <figcaption>Corresponding sample model output</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-3 text-center">
-                                        <figure>
-                                            <img src="shadowGan/scene5_bad_real.png" class="img-fluid mx-auto d-block">
-                                            <figcaption>Sample ground truth</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-3 text-center">
-                                        <figure>
-                                            <img src="shadowGan/scene5_bad_fake.png" class="img-fluid mx-auto d-block">
-                                            <figcaption>Corresponding sample model output</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="card-subtitle">Course Project for Advanced Computer Graphics - CMSC740</h6>
-                                    <p class="card-text">
-                                        Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and 
-                                        the lightsource position map. Used the <a href=https://phillipi.github.io/pix2pix/ target="_blank" rel="noopener noreferrer">pix2pixmodel</a> for the task.
-                                    </p>
-                                    <a href="https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix" class="btn btn-primary">Details</a>
-                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                                </div>
-                            </div>
-                        
-                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
-                                <!--img class="card-img-top" src="..." alt="Card image cap"-->
-                                <h5 class="card-header">"Lumos" - Board and Video Game</h5>
-                                <div class="row d-flex justify-content-center mt-2">
-                                    <div class="col-3 text-center">
-                                        Lumos Board Game
-                                        <img src="lumos/lumos_board.png" class="img-fluid mx-auto d-block">
-                                    </div>
-                                    <div class="col-3 text-center">
-                                        Lumos Video Game
-                                        <img src="lumos/lumos_video_3.png" class="img-fluid mx-auto d-block">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="card-subtitle">Course Project for Game Design - INST728E</h6>
-                                    <p class="card-text">
-                                        Designed a board game and a video game based on the theme of propagating light in a 2D space. Click below for more details about the games.
-                                    </p>
-                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                                    <a href="lumos/lumos.html" class="btn btn-primary">Details</a>
-                                </div>
-                            </div>
-                        </div>
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">Monocular Human Position Estimator</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/proj_mon_human_det.gif" alt="">
+					<div class="card-body">
+					    <p class="card-text">					    
+						Developed module performs <span style="font-weight: bold;">detection and tracking</span> of humans in the frame. 
+						This is accomplished by using the pre-trained HOG descriptor along with an SVM detector from 
+						<span style="font-weight: bold;">opencv</span> to detect the location of humans in the camera frame.
+						</thead>
+					    </p>
+				    	<a href="https://github.com/abhijitmahalle/AR-tag-detection" class="btn btn-primary" target="_blank">Details</a>
+					</div>
+				</div>
 
-                        <div class="row">
-                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
-                                <!--img class="card-img-top" src="..." alt="Card image cap"-->
-                                <h5 class="card-header">Virtual Music Instrument Dashboard</h5>
-                                <div class="row d-flex justify-content-center text-center mt-2">
-                                    <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="tunebox/homePanel.png" class="d-block w-100" alt="Home Panel">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="tunebox/tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="tunebox/tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="tunebox/tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="tunebox/tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
-                                            </div>
-                                            <!--div class="carousel-item">
-                                                <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
-                                            </div-->
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="card-subtitle">Course Project for Creative Multimedia - BITSF398</h6>
-                                    <p class="card-text">
-                                        Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp,
-                                        and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK
-                                    </p>
-                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                                </div>
-                            </div>
-                        </div>
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">Home organizing robot</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/home_organizing_robot.gif" alt="">
+					<div class="card-body">                                    
+					    <p class="card-text">
+						Autonomous application based on <span style="font-weight: bold;">ROS</span>, for search and manipulation of small objects. 
+						Projects development was performed using <span style="font-weight: bold;">Agile</span> development process and uses 
+						<span style="font-weight: bold;">navigation stack, Moveit </span> and 
+						<span style="font-weight: bold;">computer vision</span> to complete the task.
+					    </p>
+					    <a href="https://github.com/abhijitmahalle/decluttering_domestic_robot" class="btn btn-primary" target="_blank">Details</a>
+					</div>
+				</div>
 
-                    </div>
-                </div>
-            </section>
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">A* on ROS Turtlebot</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/disparity_heatmap" alt="Basic interface of the physically based word vector encoding visualization tool">
+					<div class="card-body">
+					    <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
+					    <p class="card-text">
+
+					    </p>
+					    <a href="https://github.com/abhijitmahalle/stereo-vision" class="btn btn-primary" target="_blank">Details</a>
+					    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+					</div>
+				</div>	
+                        </div>	
+			<div class="row">
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">Monocular Human Position Estimator</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/proj_mon_human_det.gif" alt="">
+					<div class="card-body">
+					    <p class="card-text">					    
+						Developed module performs <span style="font-weight: bold;">detection and tracking</span> of humans in the frame. 
+						This is accomplished by using the pre-trained HOG descriptor along with an SVM detector from 
+						<span style="font-weight: bold;">opencv</span> to detect the location of humans in the camera frame.
+						</thead>
+					    </p>
+				    	<a href="https://github.com/abhijitmahalle/AR-tag-detection" class="btn btn-primary" target="_blank">Details</a>
+					</div>
+				</div>
+
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">Home organizing robot</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/home_organizing_robot.gif" alt="">
+					<div class="card-body">                                    
+					    <p class="card-text">
+						Autonomous application based on <span style="font-weight: bold;">ROS</span>, for search and manipulation of small objects. 
+						Projects development was performed using <span style="font-weight: bold;">Agile</span> development process and uses 
+						<span style="font-weight: bold;">navigation stack, Moveit </span> and 
+						<span style="font-weight: bold;">computer vision</span> to complete the task.
+					    </p>
+					    <a href="https://github.com/abhijitmahalle/decluttering_domestic_robot" class="btn btn-primary" target="_blank">Details</a>
+					</div>
+				</div>
+
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">A* on ROS Turtlebot</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/disparity_heatmap" alt="Basic interface of the physically based word vector encoding visualization tool">
+					<div class="card-body">
+					    <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
+					    <p class="card-text">
+
+					    </p>
+					    <a href="https://github.com/abhijitmahalle/stereo-vision" class="btn btn-primary" target="_blank">Details</a>
+					    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+					</div>
+				</div>	
+                        </div>		
+			</div>
+		</div>
+	</section>
 
 	<section id="technologies">
-		<h2>Languages and Tools:</h2>
-		<a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="70" height="40"/> </a> 
-		<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="40"/> </a>
-		<a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="70" height="40"/> </a>
-		<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="70" height="40"/> </a>
-		<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="Pytorch" width="40" height="40"/> </a>
-		<a href="https://www.ros.org/" target="_blank" rel="noreferrer"> <img align="bottom" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS" width="70" height="40"/> </a> 
-		<a href="https://gazebosim.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/240px-Gazebo_logo_without_text.svg.png" alt="Gazebo" width="40" height="40"/> </a> 
-		<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="40"/> </a> 
-		<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="70" height="40"/> </a>
+		<div class="rounded-3 p-3 panel">
+			<h3>Languages and Tools</h3>
+			<hr style="height:2px; width:100%; color:#0d6efd;"></hr>
+			<a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="70" height="40"/> </a> 
+			<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="40"/> </a>
+			<a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="70" height="40"/> </a>
+			<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="70" height="40"/> </a>
+			<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="Pytorch" width="40" height="40"/> </a>
+			<a href="https://www.ros.org/" target="_blank" rel="noreferrer"> <img align="bottom" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS" width="70" height="40"/> </a> 
+			<a href="https://gazebosim.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/240px-Gazebo_logo_without_text.svg.png" alt="Gazebo" width="40" height="40"/> </a> 
+			<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="40"/> </a> 
+			<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="70" height="40"/> </a>
+		</div>	
 	</section>
         
 	
@@ -279,7 +243,6 @@
 			<p>
                         <b>Location</b>: <a href="https://goo.gl/maps/mvicmQrcwvtBLt6y6" target="_blank" rel="noopener noreferrer">Washington Metropolitan Area</a>
                     	</p>
-
 		</div>
 	</section>
         </div>
