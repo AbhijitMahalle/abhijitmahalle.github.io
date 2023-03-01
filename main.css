@@ -12,7 +12,7 @@
 }
 
 .panel {
-    background-color: #eef0f2;
+    background-color: #212121;
 }
 
 section:before {
@@ -36,7 +36,7 @@ footer:before {
 }
 
 .list-group-item {
-    background-color: #eef0f2;
+    background-color: #212121;
 }
 
 .card {
