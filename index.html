@@ -14,7 +14,7 @@
 
         <meta name="description" content="">
         <meta name="author" content="">
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="images/logo.svg">
         <title>Abhijit Mahalle</title>
     </head>
     
@@ -22,7 +22,8 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient" style="background-color: #0d6efd;">
             <div class="container">
                 <a class="navbar-brand zoom" href="#home">
-                    Abhijit Mahalle
+			<img src="images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    	Abhijit Mahalle
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,7 +57,7 @@
 
         <div class="container">
             <section id="home">
-                <div class="row rounded-3 p-2">
+                <div class="row rounded-3 p-1">
                     <div class="col-md-3 col-sm-12">
                         <img src="images/bio.jpeg" alt="Portrait of Abhijit Mahalle" class="img-responsive rounded-circle mx-auto d-block">
                         <br>
@@ -71,10 +72,10 @@
                             I am a member of the <a href="https://prg.cs.umd.edu/" target="_blank" rel="noopener noreferrer">Perception and Robotics Group</a> at 
                             the University of Maryland. 
                         </p>
-                        <p style="margin-bottom:2.1cm;">
+                        <p style="margin-bottom:83px;">
                             I enjoy hiking and adventure sports.
                         </p>  
-			<h5>Technical Skills:</h5>
+			<h5>Domain Skills:</h5>
 			<p>Computer Vision, Deep-Learning, State Estimation, Sensor Fusion, Path Planning, Controls, SLAM, OpenCV, ROS, C++, Python</p>
                     </div>
                 </div>
@@ -100,7 +101,7 @@
                             </div>
 
                             <div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
-                                <h5 class="card-header">Lane detection</h5>
+                                <h5 class="card-header">Lane detection and turn prediction</h5>
                                 <img class="card-img-top mt-2" src="images/thumbs/curved_lane_detection.gif" alt="">
                                 <div class="card-body">                                    
                                     <p class="card-text">
@@ -155,8 +156,8 @@
 				</div>
 
 				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
-					<h5 class="card-header">A* on ROS Turtlebot</h5>
-					<img class="card-img-top mt-2" src="images/thumbs/disparity_heatmap" alt="Basic interface of the physically based word vector encoding visualization tool">
+					<h5 class="card-header">A* path-planning</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/A_star" alt="Basic interface of the physically based word vector encoding visualization tool">
 					<div class="card-body">
 					    <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
 					    <p class="card-text">
@@ -170,7 +171,7 @@
 			<div class="row">
 				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
 					<h5 class="card-header">Monocular Human Position Estimator</h5>
-					<img class="card-img-top mt-2" src="images/thumbs/proj_mon_human_det.gif" alt="">
+					<img class="card-img-top mt-2" src="images/thumbs/calib1.png" alt="">
 					<div class="card-body">
 					    <p class="card-text">					    
 						Developed module performs <span style="font-weight: bold;">detection and tracking</span> of humans in the frame. 
@@ -205,7 +206,47 @@
 
 					    </p>
 					    <a href="https://github.com/abhijitmahalle/stereo-vision" class="btn btn-primary" target="_blank">Details</a>
-					    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+					</div>
+				</div>	
+                        </div>		
+			<div class="row">
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">Monocular Human Position Estimator</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/calib1.png" alt="">
+					<div class="card-body">
+					    <p class="card-text">					    
+						Developed module performs <span style="font-weight: bold;">detection and tracking</span> of humans in the frame. 
+						This is accomplished by using the pre-trained HOG descriptor along with an SVM detector from 
+						<span style="font-weight: bold;">opencv</span> to detect the location of humans in the camera frame.
+						</thead>
+					    </p>
+				    	<a href="https://github.com/abhijitmahalle/AR-tag-detection" class="btn btn-primary" target="_blank">Details</a>
+					</div>
+				</div>
+
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">Home organizing robot</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/home_organizing_robot.gif" alt="">
+					<div class="card-body">                                    
+					    <p class="card-text">
+						Autonomous application based on <span style="font-weight: bold;">ROS</span>, for search and manipulation of small objects. 
+						Projects development was performed using <span style="font-weight: bold;">Agile</span> development process and uses 
+						<span style="font-weight: bold;">navigation stack, Moveit </span> and 
+						<span style="font-weight: bold;">computer vision</span> to complete the task.
+					    </p>
+					    <a href="https://github.com/abhijitmahalle/decluttering_domestic_robot" class="btn btn-primary" target="_blank">Details</a>
+					</div>
+				</div>
+
+				<div class="card col-md-4 col-sm-12 mb-3 mr-5 ml-5">
+					<h5 class="card-header">A* on ROS Turtlebot</h5>
+					<img class="card-img-top mt-2" src="images/thumbs/disparity_heatmap" alt="Basic interface of the physically based word vector encoding visualization tool">
+					<div class="card-body">
+					    <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
+					    <p class="card-text">
+
+					    </p>
+					    <a href="https://github.com/abhijitmahalle/stereo-vision" class="btn btn-primary" target="_blank">Details</a>
 					</div>
 				</div>	
                         </div>		
@@ -217,15 +258,17 @@
 		<div class="rounded-3 p-3 panel">
 			<h3>Languages and Tools</h3>
 			<hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-			<a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="70" height="40"/> </a> 
-			<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="40"/> </a>
-			<a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="70" height="40"/> </a>
-			<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="70" height="40"/> </a>
-			<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="Pytorch" width="40" height="40"/> </a>
-			<a href="https://www.ros.org/" target="_blank" rel="noreferrer"> <img align="bottom" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS" width="70" height="40"/> </a> 
-			<a href="https://gazebosim.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/240px-Gazebo_logo_without_text.svg.png" alt="Gazebo" width="40" height="40"/> </a> 
-			<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="40"/> </a> 
-			<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="70" height="40"/> </a>
+			<a href="https://cplusplus.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="45" height="40"/> </a> 
+			<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="45" height="40"/> </a>
+			<a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="45" height="40"/> </a>	
+			<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="45" height="40"/> </a>	
+			<a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="45" height="40"/> </a>
+			<a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="Pytorch" width="45" height="40"/> </a>
+			<a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="45" height="40"/> </a>
+			<a href="https://www.ros.org/" target="_blank" rel="noreferrer"> <img align="bottom" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS" width="45" height="40"/> </a> 
+			<a href="https://gazebosim.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gazebo_logo_without_text.svg/240px-Gazebo_logo_without_text.svg.png" alt="Gazebo" width="45" height="40"/> </a> 
+			<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="45" height="40"/> </a>
+			<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="45" height="40"/> </a> 	
 		</div>	
 	</section>
         
