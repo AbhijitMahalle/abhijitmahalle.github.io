@@ -21,7 +21,7 @@
                 <name>Abhijit Mahalle</name>
               </p>
               <p>I am a Robotics graduate student at the <a href="https://www.umd.edu/">University of Maryland</a> and a Research Assistant at the <a href="https://prg.cs.umd.edu/">Perception and Robotics Group</a>,
-                where I work on Computer Vision. 
+                where I work on Computer Vision. I'm interested in computer vision, machine learning, image processing, and robotics software development.
               </p>
               <p>
                 I like to work on innovative projects to solve challenging real-world problems.
@@ -38,51 +38,67 @@
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I'm interested in computer vision, machine learning, image processing, and robotics software development.
-              </p>
+              <heading>Computer Vision Projects</heading>           
             </td>
           </tr>
         </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='sfm_image'>
-                <img src='images/sfm.png' width="160"></div>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://github.com/abhijitmahalle/structure-from-motion">
-              <papertitle>Structure from Motion</papertitle>
-            </a>
-            <p>
-              Reconstructed a 3D scene and simultaneously obtained camera poses from a given set of images using their feature point correspondence (epipolar geometry, triangulation and non-linear optimization).
-            </p>
-          </td>
-        </tr>		
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='sfm'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/thumbs/sfm.png" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/dreamfusion.jpg' width="160">
+                <div class="two" id='sfm_image'>
+                  <img src='images/sfm.png' height=100% width=100%></div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/structure-from-motion">
+                <papertitle>Structure from Motion</papertitle>
+              </a>
+              <p>
+                Reconstructed a 3D scene and simultaneously obtained camera poses from a given set of images using their feature point correspondence 
+                and the concepts of epipolar geometry, triangulation and non-linear optimization.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='samurai_image'>
+                  <img src='images/samurai_after.jpg' width="160"></div>
+                <img src='images/samurai_before.jpg' width="160">
               </div>
               <script type="text/javascript">
-                function dreamfusion_start() {
-                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                function samurai_start() {
+                  document.getElementById('samurai_image').style.opacity = "1";
                 }
 
-                function dreamfusion_stop() {
-                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                function samurai_stop() {
+                  document.getElementById('samurai_image').style.opacity = "0";
+                }
+                samurai_stop()
+              </script>
+            
+          <tr onmouseout="visualfusion_stop()" onmouseover="visualfusion_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='visual_fusion_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/visual_fusion.gif" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/visual_fusion.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function visualfusion_start() {
+                  document.getElementById('visual_fusion_image').style.opacity = "1";
+                }
+
+                function visualfusion_stop() {
+                  document.getElementById('visual_fusion_image').style.opacity = "0";
                 }
                 dreamfusion_stop()
               </script>
