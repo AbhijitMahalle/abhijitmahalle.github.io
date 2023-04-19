@@ -122,8 +122,10 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April Tag detection and tracking</h3></a>
               <p>
-                Detected, decoded, and tracked an April Tag by background removal using Fast Fourier Transform and Harris corner detection. Superimposed a 
-                custom image and placed a 3D virtual cube on the tag using homography, calibration, and projection matrices.
+                Detected, decoded, and tracked an April Tag by background removal using Fast Fourier Transform and Harris corner detection. 
+              </p>
+              <p>
+                Superimposed a custom image and placed a 3D virtual cube on the tag using homography, calibration, and projection matrices.
               </p>
             </td>
           </tr>
@@ -176,8 +178,9 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/panorama-stitching" target="_blank"><h3>Panorama Stitching</h3></a>
               <p>
-                Stitched images to create a panorama using traditional (Homography estimation using feature points) and
-                deep learning (HomographyNet: Supervised and unsupervised) methods.
+                Stitched multiple images to create a panorama using Harris Corner detector with Adaptive Non-Maximal Suppression for feature matching, RANSAC
+                for removing outliers, homography, and Poisson’s blending. Trained a CNN with supervised and unsupervised approach and a photometric loss function to 
+                estimate homography.
               </p>
             </td>
           </tr>
