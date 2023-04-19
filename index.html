@@ -59,8 +59,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/structure-from-motion" target="_blank"><h3>Structure from Motion</h3></a>
               <p>
-                Reconstructed a <strong>3D</strong> scene and simultaneously obtained <strong>3camera poses</strong> from a given set of images using
-                their feature point correspondence, <strong>epipolar geometry, triangulation, bundle-adjustment</strong> and <strong> non-linear optimization</strong>.
+                Reconstructed a 3D scene and simultaneously obtained camera poses from a given set of images using
+                their feature point correspondence, epipolar geometry, triangulation, bundle-adjustment and non-linear optimization.
               </p>
             </td>
           </tr>
@@ -72,8 +72,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/visual-odometry" target="_blank"><h3>Visual Odometry</h3></a>
               <p>
-                Computed trajectory of a camera placed on an autonomous vehicle using the concepts of feature-matching,
-                RANSAC, epipolar geometry and achieved an accuracy of over 90%.
+                Estimated trajectory of an autonomous vehicle using RANSAC for feature-matching and epipolar geometry and achieved an accuracy of 90%.
               </p>
             </td>
           </tr>
@@ -85,7 +84,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/visual-sensor-fusion" target="_blank"><h3>Visual Sensor Fusion</h3></a>
               <p>
-                Fused the output of YOLO detections and LIDAR point cloud projections on a video sequence to detect humans, bicycles, and
+                Fused the output of YOLO detections and LIDAR point-cloud projections to detect humans, bicycles, and
                 cars and their corresponding distance from the autonomous vehicle.
               </p>
             </td>
@@ -98,8 +97,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/stereo-vision" target="_blank"><h3>Stereo Vision</h3></a>
               <p>
-                Estimated depth and disparity for image sequences in Middlebury dataset by implementing the concepts of epipolar geometry, rectification, 
-                correspondence, camera calibration, and SSD.
+                Estimated depth and disparity for image sequences in Middlebury dataset using epipolar geometry, rectification, 
+                feature-correspondence, camera calibration, and template matching using sum of squared differences.
               </p>
             </td>
           </tr>
@@ -111,7 +110,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/zhang-camera-calibration" target="_blank"><h3>Zhang's Camera Calibration</h3></a>
               <p>
-                Implemented Zhang’s camera calibration technique with non-linear optimization.
+                Implemented Zhang’s camera calibration with non-linear optimization to find the intrinsic and extrinsic parameters of a camera.
               </p>
             </td>
           </tr>
@@ -121,10 +120,10 @@
               <img src="images/virtual_cube.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>AR Tag Detection and Tracking</h3></a>
+              <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April Tag detection and tracking</h3></a>
               <p>
-                Decoded custom Aruco marker using corner detection and fast Fourier Transform and superimposed a custom image and a virtual cube on it using projection, 
-                calibration, and homography matrices.
+                Detected, decoded, and tracked an April Tag by background removal using Fast Fourier Transform and Harris corner detection. Superimposed a 
+                custom image and placed a 3D virtual cube on the tag using homography, calibration, and projection matrices.
               </p>
             </td>
           </tr>
@@ -136,8 +135,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane Detection and Turn Prediction</h3></a>
               <p>
-                Detected straight and curved road lanes using homography, hough lines, polynomial curve fitting,
-                and predicted turn by calculating the radius of curvature for detected lanes mimicking the lane departure system in autonomous vehicles.
+                Detected straight and curved lanes mimicking the lane departure warning system in autonomous vehicles by using homography,
+                hough transform, polynomial curve fitting through sliding window technique and predicted the turn using the radius of curvature.
               </p>
             </td>
           </tr>
@@ -149,7 +148,9 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/Monocular-Human-Position-Estimator" target="_blank"><h3>Human Position Estimator</h3></a>
               <p>
-                Developed a software by Agile Iterative Process that detects and tracks humans using a pre-trained HOG descriptor and SVM detector of OpenCV. 
+                Developed a software in C++ by Agile Iterative Process and tes-driven development that detects and tracks humans using a pre-trained HOG 
+                descriptor and SVM detector of OpenCV. Designed unit tests using Google Test, maintained version control using Git, checked build using Travis CI,
+                and code coverage using Coverall.
               </p>
             </td>
           </tr>
@@ -161,8 +162,9 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/face-swap" target="_blank"><h3>Face Swap</h3></a>
               <p>
-                Swapped faces in videos using traditional approaches like Delaunay Triangulation and Thin Plate Spline and Deep Learning approach with Position Map 
-                Regression Network.
+                Implemented a face-swap filter using dlib library from OpenCV to find facial landmarks. Used both Delaunay Triangulation with barycen-
+                tric coordinate and Thin Plate Spline to warp one face to another and compared the methods. Leveraged Position Map Regression Network for 
+                face-swap using model-based approach.
               </p>
             </td>
           </tr>
