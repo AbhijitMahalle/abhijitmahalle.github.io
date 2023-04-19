@@ -21,7 +21,8 @@
                 <name>Abhijit Mahalle</name>
               </p>
               <p>
-                I am a Robotics graduate student at the <a href="https://www.umd.edu/" target="_blank">University of Maryland</a> and a Researcher at the <a href="https://prg.cs.umd.edu/">Perception and Robotics Group</a>,
+                I am a Robotics graduate student at the <a href="https://www.umd.edu/" target="_blank">University of Maryland</a> and a Researcher at the <a href="https://prg.cs.umd.edu/" target="_blank">
+                Perception and Robotics Group</a>,
                 where I work on Computer Vision.
               </p>
               <p>
@@ -230,19 +231,7 @@
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/steering-control.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>Steering Control using CNN</h3></a>
-              <p>
-                Implemented NVIDIA's CNN architecture to make the car learn steering control in a simulated environmnent.              
-              </p>
-            </td>
-          </tr>
-
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/PbLite_3.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -250,19 +239,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/probability-based-boundary-detection" target="_blank"><h3>Image Denoising</h3></a>
               <p>
-                Implemented a convolutional auto-encoder with skip connections for general image denoising and improved the performance by 10% over baseline.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/face-recognition.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/face-recognition-using-machine-learning-classifiers" target="_blank"><h3>Face Recognition</h3></a>
-              <p>
-                Implemented Linear and Kernel SVM, Logistic Regression, and CNN along with transfer learning on MNIST dataset with an accuracy of over 90%.
+                Developed a convolutional auto-encoder network with skip connections using PyTorch for general denoising of images in Smart-phone Image Denoising Dataset 
+                and improved the performance by 10% over the baseline model.
               </p>
             </td>
           </tr>
@@ -274,8 +252,37 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/hand-written-digit-recognition" target="_blank"><h3>Hand-written Digit Recogntion</h3></a>
               <p>
-                Implemented Bayes’ classifier, k-NN, Kernel and Boosted SVM along with PCA and LDA for face recognition and achieved an accuracy of over 70% 
-                for each of them.
+                Implemented Linear SVM, Kernel SVM with linear, polynomial, and RBF kernels, Logistic Regression, and CNN without using any in-built functions 
+                on MNIST dataset.
+              </p>
+              <p>
+                Leveraged Transfer Learning to train on less data and achieved an accuracy increase of 42% over the baseline CNN model.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/steering-control.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>Steering Control using CNN</h3></a>
+              <p>
+                Implemented NVIDIA’s CNN architecture using TensorFlow to learn steering control for autonomous driving in Udemy’s self-driving car simulator and 
+                achieved a training accuracy of 94% and test accuracy of 86%.            
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/face-recognition.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/face-recognition-using-machine-learning-classifiers" target="_blank"><h3>Face Recognition</h3></a>
+              <p>
+                Implemented Bayes’ classifier, k-NN, Kernel and Boosted SVM without using any in-built functions along with dimensionality reduction using PCA and LDA 
+                for face recognition and achieved an accuracy of over 70% for each of them.
               </p>
             </td>
           </tr>
@@ -288,7 +295,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Robotics Software Projects</heading>           
+              <heading>Robotics Software Project</heading>           
             </td>
           </tr>
         </tbody></table>
@@ -301,8 +308,11 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/decluttering_domestic_robot" target="_blank"><h3>Home Organizing Robot</h3></a>
               <p>
-                Developed a ROS package with GitHub Continuous Integration and gtest for mobile manipulator for indoor search and object manipulation. 
-                Used MoveBase for autonomous navigation and MoveIt for manipulator control.
+                Developed a ROS package in C++ with GitHub Continuous Integration and test-driven development using Google Test for Tiago
+                mobile manipulator for indoor search and object manipulation.
+              </p>
+              <p>
+                Used MoveBase for autonomous navigation, MoveIt for manipulator control, and OpenCV for filtering and object detection.
               </p>
             </td>
           </tr>
@@ -340,7 +350,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/A-star_on_turtlebot" target="_blank"><h3>A* Algorithm</h3></a>
               <p>
-                Implemented A* on a point robot and ROS Turtlebot considering the holonomic and non-holonomic constraints respectively.
+                Implemented A* algorithm on a point robot and ROS Turtlebot considering its non-holonomic constraints.
               </p>
             </td>
           </tr>
@@ -352,7 +362,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/dijkstra" target="_blank"><h3>Dijkstra's Algorithm</h3></a>
               <p>
-                Implemented Dijkstra's algorithm on a point robot to find the optimal path with holonomic constraints.
+                Implemented Dijkstra's algorithm on a point robot to find the obstacle-free optimal path.
               </p>
             </td>
           </tr>
@@ -390,8 +400,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/error-state-extended-kalman-filter" target="_blank"><h3>Sensor Fusion using ES-EKF</h3></a>
               <p>
-                Implemented the Error State Extended Kalman Filter (ES-EKF) for multi-sensor fusion (IMU+LIDAR+GNSS) for pose estimation of an autonomous vehicle.
-              </p>
+                Fused sensor data from IMU, LIDAR, GNSS using Error State Extended Kalman Filter to estimate pose of an autonomous vehicle.
             </td>
           </tr>
         </tbody></table>
@@ -403,7 +412,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Control Systems Projects</heading>           
+              <heading>Control System Projects</heading>           
             </td>
           </tr>
         </tbody></table>
@@ -416,7 +425,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/error-state-extended-kalman-filter" target="_blank"><h3>Lateral and Longitudinal Controller</h3></a>
               <p>
-                Implemented a lateral and longitudinal controller in Python to drive a vehicle autonomously in CARLA simulator.
+                Designed a PID controller for lateral and longitudinal control of autonomous vehicle considering vehicle dynamics in Python.
               </p>
             </td>
           </tr>
@@ -428,7 +437,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/self-driving-vehicle-control" target="_blank"><h3>Gantry Crane Control</h3></a>
               <p>
-                Implemented a LQR and LQG controller for a gantry cane with two masses at different heights.
+                Designed a LQR and LQG controller for gantry crane, analyzed the controllability and observability, and implemented Kalman filter to account for 
+                Gaussian noise in sensor measurements.
               </p>
             </td>
           </tr>
