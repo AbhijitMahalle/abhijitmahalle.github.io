@@ -21,15 +21,12 @@
                 <name>Abhijit Mahalle</name>
               </p>
               <p>
-                I am a Robotics graduate student at the <a href="https://www.umd.edu/" target="_blank">University of Maryland</a> and a Researcher at the <a href="https://prg.cs.umd.edu/" target="_blank">
-                Perception and Robotics Group</a>,
-                where I work on Computer Vision.
+                I am a Robotics graduate from the <a href="https://www.umd.edu/" target="_blank">University of Maryland</a> and looking for full-time role in Computer Vision, 
+                Robotics Software Development or Machine learning. 
               </p>
               <p>
-                I'm interested in computer vision, machine learning, image-processing, and robotics software development.
-              </p>
-              <p>
-                I like to work on innovative projects to solve challenging real-world problems.
+                I have worked as a Research Assistant at the <a href="https://prg.cs.umd.edu/" target="_blank">Perception and Robotics Group</a> and 
+                as a Machine Learning Engineer at <a href="https://www.worley.com/" target="_blank">Worley</a>.
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/6kJkyfZN">Email</a> &nbsp;/&nbsp;
@@ -68,38 +65,46 @@
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/visual-odometry.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="images/pano1001.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/visual-odometry" target="_blank"><h3>Visual Odometry</h3></a>
+              <a href="https://github.com/abhijitmahalle/panorama-stitching" target="_blank"><h3>Panorama Stitching</h3></a>
               <p>
-                Estimated trajectory of an autonomous vehicle using RANSAC for feature-matching and epipolar geometry and achieved an accuracy of 90%.
+                Stitched multiple images to create a panorama using Harris Corner detection with Adaptive Non-Maximal Suppression for feature matching, RANSAC for removing 
+                outliers, homography, and Poisson’s blending in Python.
+              </p>
+              <p>
+                Developed a CNN with supervised and unsupervised approach to estimate homography by generating a custom dataset and using photometric loss and achieved a MSE 
+                of 55.59.
               </p>
             </td>
           </tr>
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/visual_fusion.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="images/faceswap.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/visual-sensor-fusion" target="_blank"><h3>Visual Sensor Fusion</h3></a>
+              <a href="https://github.com/abhijitmahalle/face-swap" target="_blank"><h3>Face Swap</h3></a>
               <p>
-                Fused the output of YOLO detections and LIDAR point-cloud projections to detect humans, bicycles, and
-                cars and their corresponding distance from the autonomous vehicle.
+                Implemented a face-swap filter using dlib library from OpenCV to find facial landmarks. Used both Delaunay Triangulation with barycentric coordinates and 
+                Thin Plate Spline to warp one face to another and compared the methods. 
+              </p>
+              <p>
+                Leveraged Position Map Regression Network for face-swap using model-based approach.
               </p>
             </td>
           </tr>
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/disparity_heatmap.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="images/PbLite_3.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/stereo-vision" target="_blank"><h3>Stereo Vision</h3></a>
+              <a href="https://github.com/abhijitmahalle/probability-based-boundary-detection" target="_blank"><h3>PbLite Edge Detection</h3></a>
               <p>
-                Estimated depth and disparity for image sequences in Middlebury dataset using epipolar geometry, rectification, 
-                feature-correspondence, camera calibration, and template matching using sum of squared differences.
+                Detected edges using a simplified version of the probability of boundary detection algorithm by implementing custom filter-banks
+                and using texton, brightness, and color maps.
               </p>
             </td>
           </tr>
@@ -111,10 +116,50 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/zhang-camera-calibration" target="_blank"><h3>Zhang's Camera Calibration</h3></a>
               <p>
-                Implemented Zhang’s camera calibration with non-linear optimization to find the intrinsic and extrinsic parameters of a camera.
+                Implemented Zhang’s camera calibration technique with non-linear optimization to find the intrinsic and extrinsic parameters of a camera.
               </p>
             </td>
           </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/visual-odometry.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/visual-odometry" target="_blank"><h3>Visual Odometry</h3></a>
+              <p>
+                Estimated trajectory of an autonomous vehicle using RANSAC for feature-matching and epipolar geometry and achieved an accuracy of 90%.
+              </p>
+            </td>
+          </tr>
+
+          <!-- <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/visual_fusion.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/visual-sensor-fusion" target="_blank"><h3>Visual Sensor Fusion</h3></a>
+              <p>
+                Fused the output of YOLO detections and LIDAR point-cloud projections to detect humans, bicycles, and
+                cars and their corresponding distance from the autonomous vehicle.
+              </p>
+            </td>
+          </tr> -->
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/disparity_heatmap.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/stereo-vision" target="_blank"><h3>Stereo Vision</h3></a>
+              <p>
+                Estimated depth and disparity from image sequences in the Middlebury dataset using epipolar geometry, rectification, 
+                feature-correspondence, camera calibration, and template matching using sum of squared differences.
+              </p>
+            </td>
+          </tr>
+
+          
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
@@ -123,7 +168,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April Tag Detection and Tracking</h3></a>
               <p>
-                Detected, decoded, and tracked an April Tag by background removal using Fast Fourier Transform and Harris corner detection. 
+                Detected, decoded, and tracked an April Tag by background removal using FFT and Harris corner detection. 
               </p>
               <p>
                 Superimposed a custom image and placed a 3D virtual cube on the tag using homography, calibration, and projection matrices.
@@ -138,8 +183,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane Detection and Turn Prediction</h3></a>
               <p>
-                Detected straight and curved lanes mimicking the lane departure warning system in autonomous vehicles by using homography,
-                hough transform, polynomial curve fitting through sliding window technique and predicted the turn using the radius of curvature.
+                Detected straight and curved road using homography, hough transform for line detection, polynomial curve fitting through sliding window technique and 
+                predicted the turn using the radius of curvature of the detected road lane in Python.
               </p>
             </td>
           </tr>
@@ -154,53 +199,7 @@
                 Developed a software in C++ by Agile Iterative Process and test-driven development that detects and tracks humans using a pre-trained HOG 
                 descriptor and SVM detector of OpenCV. 
               <p>
-                Designed unit tests using Google Test, maintained version control using Git, checked build using Travis CI,
-                and code coverage using Coverall.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/faceswap.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/face-swap" target="_blank"><h3>Face Swap</h3></a>
-              <p>
-                Implemented a face-swap filter using dlib library from OpenCV to find facial landmarks. Used both Delaunay Triangulation with barycentric coordinate and 
-                Thin Plate Spline to warp one face to another and compared the methods. 
-              </p>
-              <p>
-                Leveraged Position Map Regression Network for face-swap using model-based approach.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/pano1001.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/panorama-stitching" target="_blank"><h3>Panorama Stitching</h3></a>
-              <p>
-                Stitched multiple images to create a panorama using Harris Corner detector with Adaptive Non-Maximal Suppression for feature matching, RANSAC
-                for removing outliers, homography, and Poisson’s blending.
-              </p>
-              <p>
-                Trained a CNN with supervised and unsupervised approach and a photometric loss function to estimate homography.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/PbLite_3.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/probability-based-boundary-detection" target="_blank"><h3>PbLite Edge Detection</h3></a>
-              <p>
-                Detected edges using a simplified version of the probability of boundary detection algorithm by implementing custom filter-banks
-                and using texton, brightness, and color maps.
+                Designed unit tests using Google Test, maintained version control using Git, checked build using Travis CI, and code coverage using Coverall.
               </p>
             </td>
           </tr>
@@ -234,29 +233,29 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/PbLite_3.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="images/semantic-segmentation.jpeg" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/probability-based-boundary-detection" target="_blank"><h3>Image Denoising</h3></a>
+              <a href="https://github.com/abhijitmahalle/image-segmentation" target="_blank"><h3>Semantic Segmentation</h3></a>
               <p>
-                Developed a convolutional auto-encoder network with skip connections using PyTorch for general denoising of images in Smart-phone Image Denoising Dataset 
-                and improved the performance by 10% over the baseline model.
+                Implemented a CNN-based U-Net architecture using PyTorch to perform human segmentation by training the model on images in the 
+                MIT ADE20K dataset.
+              </p>
+              <p>
+                Employed forward hooks from a pre-trained Resnet-152 encoder to relay data to the custom decoder and achieved an IOU score of 0.73.
               </p>
             </td>
           </tr>
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/handwritten-digit.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="images/image-denoising.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/hand-written-digit-recognition" target="_blank"><h3>Hand-written Digit Recogntion</h3></a>
+              <a href="https://github.com/abhijitmahalle/image-denoising" target="_blank"><h3>Image Denoising</h3></a>
               <p>
-                Implemented Linear SVM, Kernel SVM with linear, polynomial, and RBF kernels, Logistic Regression, and CNN without using any in-built functions 
-                on MNIST dataset.
-              </p>
-              <p>
-                Leveraged Transfer Learning to train on less data and achieved an accuracy increase of 42% over the baseline CNN model.
+                Developed a convolutional auto-encoder network with skip connections using PyTorch to remove any type of noise from images by training it on the 
+                Smartphone Image Denoising dataset and improved the performance by \textbf{10\%} over the baseline model.
               </p>
             </td>
           </tr>
@@ -268,9 +267,38 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>Steering Control using CNN</h3></a>
               <p>
-                Implemented NVIDIA’s CNN architecture using TensorFlow to learn steering control for autonomous driving in Udemy’s self-driving car simulator and 
-                achieved a training accuracy of 94% and test accuracy of 86%.            
+                Developed a CNN using \textbf{Tensorflow} to learn steering angle from the image output of the camera attached to the front of the autonomous vehicle and 
+                achieved an accuracy of \textbf{86\%}.           
               </p>
+              <p>
+                Generated a custom dataset by manually running the car on laps using Udacity's self-driving car simulator and tested the model on the same.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/monkey-species-classification.jpg" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/transfer-learning" target="_blank"><h3>Transfer Learning</h3></a>
+              <p>
+                Leveraged transfer learning by fine-tuning the pre-trained \textbf{VGG-16} model to classify monkey species using \textbf{PyTorch} and achieved an 
+                accuracy increase of \textbf{40\%} over the simpler CNN model.
+              </p>         
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/handwritten-digit.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/hand-written-digit-recognition" target="_blank"><h3>Hand-written Digit Recogntion</h3></a>
+              <p>
+                Implemented \textbf{Linear SVM}, \textbf{Kernel SVM} with linear, polynomial, and RBF kernels, \textbf{Logistic Regression}, and \textbf{LeNet-5 CNN} 
+                architecture on the \textbf{MNIST} dataset to recognize digit from an image without using any in-built functions and compared their results.
+              </p>           
             </td>
           </tr>
 
@@ -279,10 +307,10 @@
               <img src="images/face-recognition.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/face-recognition-using-machine-learning-classifiers" target="_blank"><h3>Face Recognition</h3></a>
+              <a href="https://github.com/abhijitmahalle/face-recognition" target="_blank"><h3>Face Recognition</h3></a>
               <p>
-                Implemented Bayes’ classifier, k-NN, Kernel and Boosted SVM without using any in-built functions along with dimensionality reduction using PCA and LDA 
-                for face recognition and achieved an accuracy of over 70% for each of them.
+                Implemented \textbf{Bayes' classifier, k-NN, Kernel} and \textbf{Boosted SVM} without using any in-built functions along with dimensionality reduction 
+                using PCA and LDA for face recognition and achieved an accuracy of over 70\% for each of them.
               </p>
             </td>
           </tr>
@@ -308,11 +336,14 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/decluttering_domestic_robot" target="_blank"><h3>Home Organizing Robot</h3></a>
               <p>
-                Developed a ROS package in C++ with GitHub Continuous Integration and test-driven development using Google Test for Tiago
-                mobile manipulator for indoor search and object manipulation.
+                Developed a ROS package in C++ in Linux by Agile Iterative Process with GitHub Continuous Integration and test-driven
+                development using Google Test for Tiago mobile manipulator for indoor search and object manipulation.
               </p>
               <p>
                 Used MoveBase for autonomous navigation, MoveIt for manipulator control, and OpenCV for filtering and object detection.
+              </p>
+              <p>
+                Maintained software version control using Git, checked build using Travis CI and achieved a code coverage of 91%.
               </p>
             </td>
           </tr>
