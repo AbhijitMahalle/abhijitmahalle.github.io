@@ -57,8 +57,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/structure-from-motion" target="_blank"><h3>Structure from Motion</h3></a>
               <p>
-                Reconstructed a 3D scene and simultaneously obtained camera poses from a given set of images using
-                their feature point correspondence, epipolar geometry, triangulation, bundle-adjustment and non-linear optimization.
+                Reconstructed a 3D scene and simultaneously obtained camera poses from a set of images using
+                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point, bundle-adjustment and non-linear optimization.
               </p>
             </td>
           </tr>
@@ -74,13 +74,13 @@
                 outliers, homography, and Poisson’s blending in Python.
               </p>
               <p>
-                Developed a CNN with supervised and unsupervised approach to estimate homography by generating a custom dataset and using photometric loss and achieved a MSE 
-                of 55.59.
+                Developed a convolutional neural network with supervised and unsupervised learning approach to estimate homography by generating a custom dataset and using 
+                photometric loss and achieved a MSE of 55.59.
               </p>
             </td>
           </tr>
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/faceswap.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -94,9 +94,9 @@
                 Leveraged Position Map Regression Network for face-swap using model-based approach.
               </p>
             </td>
-          </tr>
+          </tr> -->
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/PbLite_3.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -107,7 +107,7 @@
                 and using texton, brightness, and color maps.
               </p>
             </td>
-          </tr>
+          </tr> -->
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
@@ -121,7 +121,7 @@
             </td>
           </tr>
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/visual-odometry.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -131,7 +131,7 @@
                 Estimated trajectory of an autonomous vehicle using RANSAC for feature-matching and epipolar geometry and achieved an accuracy of 90%.
               </p>
             </td>
-          </tr>
+          </tr> -->
 
           <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
@@ -146,7 +146,7 @@
             </td>
           </tr> -->
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/disparity_heatmap.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -157,7 +157,7 @@
                 feature-correspondence, camera calibration, and template matching using sum of squared differences.
               </p>
             </td>
-          </tr>
+          </tr> -->
 
           
 
@@ -168,7 +168,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April Tag Detection and Tracking</h3></a>
               <p>
-                Detected, decoded, and tracked an April Tag by background removal using FFT and Harris corner detection. 
+                Detected and tracked an April Tag in a video by background removal using Fast Fourier Transform and Harris corner detection, and decoded it by identifying its 
+                position and orientation using homography.
               </p>
               <p>
                 Superimposed a custom image and placed a 3D virtual cube on the tag using homography, calibration, and projection matrices.
@@ -183,13 +184,13 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane Detection and Turn Prediction</h3></a>
               <p>
-                Detected straight and curved road using homography, hough transform for line detection, polynomial curve fitting through sliding window technique and 
-                predicted the turn using the radius of curvature of the detected road lane in Python.
+                Detected straight and curved road lanes mimicking the lane departure warning system using homography, hough transform for line detection, polynomial curve fitting 
+                using sliding window technique, and predicted the turn using the radius of curvature
               </p>
             </td>
           </tr>
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/proj_mon_human_det.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -202,9 +203,9 @@
                 Designed unit tests using Google Test, maintained version control using Git, checked build using Travis CI, and code coverage using Coverall.
               </p>
             </td>
-          </tr>
+          </tr> -->
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/optical_flow.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -216,7 +217,7 @@
               </p>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
 
         <br>
         <br>
@@ -238,11 +239,10 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/image-segmentation" target="_blank"><h3>Semantic Segmentation</h3></a>
               <p>
-                Implemented a CNN-based U-Net architecture using PyTorch to perform human segmentation by training the model on images in the 
-                MIT ADE20K dataset.
+                Implemented a U-Net architecture to perform human segmentation by training the model on images in the MIT ADE20K dataset.
               </p>
               <p>
-                Employed forward hooks from a pre-trained Resnet-152 encoder to relay data to the custom decoder and achieved an IOU score of 0.73.
+                Employed forward hooks from a pre-trained Resnet encoder to relay data to the custom decoder and achieved an IOU of 0.73
               </p>
             </td>
           </tr>
@@ -254,7 +254,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/image-denoising" target="_blank"><h3>Image Denoising</h3></a>
               <p>
-                Developed a convolutional auto-encoder network with skip connections using PyTorch to remove any type of noise from images by training it on the 
+                Developed a convolutional autoencoder with skip connections using PyTorch to remove all types of noise from images by training it on the 
                 Smartphone Image Denoising dataset and improved the performance by 10% over the baseline model.
               </p>
             </td>
@@ -265,13 +265,13 @@
               <img src="images/steering-control.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>Steering Control using CNN</h3></a>
+              <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>Steering Control for Autonomous Vehicles</h3></a>
               <p>
-                Developed a CNN using Tensorflow to learn steering angle from the image output of the camera attached to the front of the autonomous vehicle and 
-                achieved an accuracy of 86%.           
+                Developed a convolutional neural network using Tensorflow to learn steering angle from the image output of the camera attached to the front of the autonomous 
+                vehicle and achieved an accuracy of 86%.          
               </p>
               <p>
-                Generated a custom dataset by manually running the car on laps using Udacity's self-driving car simulator and tested the model on the same.
+                Created a custom dataset by manually running the car on laps using Udacity’s self-driving car simulator.
               </p>
             </td>
           </tr>
@@ -281,10 +281,10 @@
               <img src="images/monkey-species-classification.jpg" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/transfer-learning" target="_blank"><h3>Transfer Learning</h3></a>
+              <a href="https://github.com/abhijitmahalle/transfer-learning" target="_blank"><h3>Image Classification with Transfer Learning</h3></a>
               <p>
-                Leveraged transfer learning by fine-tuning the pre-trained VGG-16 model to classify monkey species using PyTorch and achieved an 
-                accuracy increase of 40\% over the simpler CNN model.
+                Leveraged transfer learning by fine-tuning the pre-trained VGG-16 model to classify monkey species and achieved an 
+                accuracy increase of 40% on the sparse training dataset having 10 classes and 140 images per class.
               </p>         
             </td>
           </tr>
@@ -296,8 +296,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/hand-written-digit-recognition" target="_blank"><h3>Hand-written Digit Recogntion</h3></a>
               <p>
-                Implemented Linear SVM, Kernel SVM with linear, polynomial, and RBF kernels, Logistic Regression, and LeNet-5 CNN
-                architecture on the MNIST dataset to recognize digit from an image without using any in-built functions and compared their results.
+                Implemented Linear SVM, Kernel SVM with linear, polynomial, and RBF kernels, Logistic Regression, and LeNet-5 CNN architecture on the MNIST dataset in Python to 
+                recognize hand-written digits using any in-built functions and compared their results.
               </p>           
             </td>
           </tr>
@@ -309,8 +309,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/face-recognition" target="_blank"><h3>Face Recognition</h3></a>
               <p>
-                Implemented Bayes' classifier, k-NN, Kernel and Boosted SVM without using any in-built functions along with dimensionality reduction 
-                using PCA and LDA for face recognition and achieved an accuracy of over 70% for each of them.
+                Implemented Bayes' classifier, k-NN, Kernel and Boosted SVM along with dimensionality reduction using PCA and MDA for face recognition and achieved an accuracy of 
+                over 70\% for each of them.
               </p>
             </td>
           </tr>
@@ -415,7 +415,7 @@
         <br>
         <br>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Sensor Fusion Projects</heading>           
@@ -438,9 +438,9 @@
 
         <br>
         <br>
-        <br>
+        <br> -->
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Control System Projects</heading>           
@@ -473,7 +473,7 @@
               </p>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
