@@ -21,12 +21,11 @@
                 <name>Abhijit Mahalle</name>
               </p>
               <p>
-                I am a Robotics graduate from the <a href="https://www.umd.edu/" target="_blank">University of Maryland</a> and looking for full-time role in Computer Vision, 
+                I am a Robotics graduate from the University of Maryland, College Park</a> and currently looking for full-time role in Computer Vision, 
                 Robotics Software Development, or Machine learning. 
               </p>
               <p>
-                I have worked as a Research Assistant at the <a href="https://prg.cs.umd.edu/" target="_blank">Perception and Robotics Group</a> and 
-                as a Machine Learning Engineer at <a href="https://www.worley.com/" target="_blank">Worley</a>.
+                I have worked as a Research Assistant at the <a href="https://prg.cs.umd.edu/" target="_blank">Perception and Robotics Group</a> of UMD's Computer Science Department.
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/6kJkyfZN">Email</a> &nbsp;/&nbsp;
@@ -58,7 +57,7 @@
               <a href="https://github.com/abhijitmahalle/structure-from-motion" target="_blank"><h3>Structure from Motion</h3></a>
               <p>
                 Reconstructed a 3D scene and simultaneously obtained camera poses from a set of images using
-                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point, bundle-adjustment and non-linear optimization.
+                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point, bundle-adjustment, linear and non-linear optimization in Python.
               </p>
             </td>
           </tr>
@@ -74,7 +73,7 @@
                 outliers, homography, and Poisson’s blending in Python.
               </p>
               <p>
-                Developed a convolutional neural network with supervised and unsupervised learning approach to estimate homography by generating a custom dataset and using 
+                Devised a CNN with supervised and unsupervised learning approach to estimate homography by generating a custom dataset and using 
                 photometric loss and achieved a MSE of 55.59.
               </p>
             </td>
@@ -109,7 +108,7 @@
             </td>
           </tr> -->
 
-          <tr>
+          <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/calib1.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -119,7 +118,7 @@
                 Implemented Zhang’s camera calibration technique with non-linear optimization to find the intrinsic and extrinsic parameters of a camera.
               </p>
             </td>
-          </tr>
+          </tr> -->
 
           <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
@@ -166,13 +165,13 @@
               <img src="images/virtual_cube.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April Tag Detection and Tracking</h3></a>
+              <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April tag detection and tracking</h3></a>
               <p>
-                Detected and tracked an April Tag in a video by background removal using Fast Fourier Transform and Harris corner detection, and decoded it by identifying its 
-                position and orientation using homography.
+                Detected and tracked an April Tag in a video by background removal using Fast Fourier Transform and Harris corner detection. Decoded the detected tag by 
+                identifying its position and orientation using homography.
               </p>
               <p>
-                Superimposed a custom image and placed a 3D virtual cube on the tag using homography, calibration, and projection matrices.
+                Superimposed a custom image and placed a 3D virtual cube on the detected April tag using homography, calibration, and projection matrices.
               </p>
             </td>
           </tr>
@@ -182,10 +181,10 @@
               <img src="images/curved_lane_detection.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane Detection for Autonomous Vehicles</h3></a>
+              <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane detection and turn prediction</h3></a>
               <p>
-                Detected straight and curved road lanes mimicking the lane departure warning system using homography, hough transform for line detection, polynomial curve fitting 
-                using sliding window technique, and predicted the turn using the radius of curvature
+                Detected straight and curved road lanes mimicking the lane departure warning system using hough transform for line detection, homography, polynomial curve fitting 
+                using sliding window technique. Predicted the turn by calculating the radius of curvature of the detected lane.
               </p>
             </td>
           </tr>
@@ -237,12 +236,12 @@
               <img src="images/semantic-segmentation.jpeg" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/image-segmentation" target="_blank"><h3>Semantic Segmentation</h3></a>
+              <a href="https://github.com/abhijitmahalle/image-segmentation" target="_blank"><h3>Image Segmentation</h3></a>
               <p>
-                Implemented a U-Net architecture to perform human segmentation by training the model on images in the MIT ADE20K dataset.
+                Implemented a CNN U-Net architecture to perform human segmentation by training the model on images in the MIT ADE20K dataset.
               </p>
               <p>
-                Employed forward hooks from a pre-trained Resnet encoder to relay data to the custom decoder and achieved an IOU of 0.73
+                Employed forward hooks from a pre-trained ResNet-152 encoder to relay data to the custom decoder. Achieved an Intersection of Union (IoU) score of 0.73.
               </p>
             </td>
           </tr>
@@ -255,23 +254,7 @@
               <a href="https://github.com/abhijitmahalle/image-denoising" target="_blank"><h3>Image Denoising</h3></a>
               <p>
                 Developed a convolutional autoencoder with skip connections using PyTorch to remove all types of noise from images by training it on the 
-                Smartphone Image Denoising dataset and improved the performance by 10% over the baseline model.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/steering-control.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>Steering Control for Autonomous Vehicles</h3></a>
-              <p>
-                Developed a convolutional neural network using Tensorflow to learn steering angle from the image output of the camera attached to the front of the autonomous 
-                vehicle and achieved an accuracy of 86%.          
-              </p>
-              <p>
-                Created a custom dataset by manually running the car on laps using Udacity’s self-driving car simulator.
+                Smartphone Image Denoising dataset. Improved the performance by 10% over the baseline model.
               </p>
             </td>
           </tr>
@@ -283,9 +266,24 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/transfer-learning" target="_blank"><h3>Image Classification with Transfer Learning</h3></a>
               <p>
-                Leveraged transfer learning by fine-tuning the pre-trained VGG-16 model to classify monkey species and achieved an 
+                Leveraged transfer learning by fine-tuning the pre-trained VGG-16 model to classify monkey species. Achieved an 
                 accuracy increase of 40% on the sparse training dataset having 10 classes and 140 images per class.
               </p>         
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/steering-control.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>CNN Steering Control</h3></a>
+              <p>
+                Designed a CNN to learn steering angle from the output of the camera attached to the autonomous vehicle.       
+              </p>
+              <p>
+                Created a custom dataset by manually running the car on laps using Udacity’s self-driving car simulator. Resulted in a testing accuracy of 86%.
+              </p>
             </td>
           </tr>
 
@@ -310,12 +308,11 @@
               <a href="https://github.com/abhijitmahalle/face-recognition" target="_blank"><h3>Face Recognition</h3></a>
               <p>
                 Implemented Bayes' classifier, k-NN, Kernel and Boosted SVM along with dimensionality reduction using PCA and MDA for face recognition and achieved an accuracy of 
-                over 70\% for each of them.
+                over 70% for each of them.
               </p>
             </td>
           </tr>
         </tbody></table>
-
         <br>
         <br>
         <br>
