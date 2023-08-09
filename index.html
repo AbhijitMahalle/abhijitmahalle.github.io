@@ -60,7 +60,7 @@
               <a href="https://github.com/abhijitmahalle/structure-from-motion" target="_blank"><h3>Structure from Motion</h3></a>
               <p>
                 Reconstructed a 3D scene and simultaneously obtained camera poses from a set of images using
-                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point, bundle-adjustment, linear and non-linear optimization in Python.
+                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point (Pnp), bundle-adjustment, linear and non-linear optimization.
               </p>
             </td>
           </tr>
@@ -73,7 +73,7 @@
               <a href="https://github.com/abhijitmahalle/panorama-stitching" target="_blank"><h3>Panorama Stitching</h3></a>
               <p>
                 Stitched multiple images to create a panorama using Harris Corner detection with Adaptive Non-Maximal Suppression for feature matching, RANSAC for removing 
-                outliers, homography, and Poisson’s blending in Python.
+                outliers, homography, and Poisson’s blending.
               </p>
               <p>
                 Devised a CNN with supervised and unsupervised learning approach to estimate homography by generating a custom dataset and using 
@@ -170,7 +170,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April tag detection and tracking</h3></a>
               <p>
-                Detected and tracked an April Tag in a video by background removal using Fast Fourier Transform and Harris corner detection. Decoded the detected tag by 
+                Detected and tracked an April Tag in a video sequence by background removal using Fast Fourier Transform and Harris corner detection. Decoded the detected tag by 
                 identifying its position and orientation using homography.
               </p>
               <p>
@@ -186,8 +186,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane detection and turn prediction</h3></a>
               <p>
-                Detected straight and curved road lanes mimicking the lane departure warning system using hough transform for line detection, homography, polynomial curve fitting 
-                using sliding window technique. Predicted the turn by calculating the radius of curvature of the detected lane.
+                Detected straight and curved road lanes mimicking the lane departure warning system in autonomous vehicles using hough transform for line detection, homography, 
+                polynomial curve fitting using sliding window technique. Predicted the turn by calculating the radius of curvature of the detected lane.
               </p>
             </td>
           </tr>
@@ -241,28 +241,33 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Object tracking and re-identification</h3></a>
               <p>
+                Resulted in a Multi-Object Tracking accuracy of 69.1 on multi‐human tracking task by implementing a one‐shot CNN tracker with two independent branches for 
+                detection and re‐identification tasks. Jointly optimized the network for two tasks.
+              </p>
+              <!-- <p>
                 Conceptualized a one‐shot CNN tracker with two independent branches for detection and re‐identification tasks to perform multi‐human tracking by training it on 
                 CrowdHuman dataset and jointly optimizing the two tasks.
               </p>
               <p>
                 Created a detection branch with three heads for heatmap, box offset, and bounding box dimension estimation, and a re‐identification branch to generate features to 
                 distinguish objects. Achieved a multiple object tracking accuracy of 69.1
-              </p>
+              </p> -->
             </td>
           </tr>
 
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="images/semantic-segmentation.jpeg" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="images/image-segmentation.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/image-segmentation" target="_blank"><h3>Image Segmentation</h3></a>
               <p>
-                Implemented a CNN U-Net architecture to perform human segmentation by training the model on images in the MIT ADE20K dataset.
+                Achieved 99% accuracy and 0.97 dice score for semantic segmentation task by training U-Net network on Carvana dataset. 
+                <!-- Implemented a CNN U-Net architecture to perform human segmentation by training the model on images in the MIT ADE20K dataset. -->
               </p>
-              <p>
-                Employed forward hooks from a pre-trained ResNet-152 encoder to relay data to the custom decoder. Achieved an Intersection of Union (IoU) score of 0.73.
-              </p>
+              <!-- <p> -->
+                <!-- Employed forward hooks from a pre-trained ResNet-152 encoder to relay data to the custom decoder. Achieved an Intersection of Union (IoU) score of 0.73. -->
+              <!-- </p> -->
             </td>
           </tr>
 
@@ -273,8 +278,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/image-denoising" target="_blank"><h3>Image Denoising</h3></a>
               <p>
-                Developed a convolutional autoencoder with skip connections using PyTorch to remove all types of noise from images by training it on the 
-                Smartphone Image Denoising dataset. Improved the performance by 10% over the baseline model.
+                Improved the performance by 10% over baseline for image denoising task by formulating a convolutional autoencoder with skip connections and training it on 
+                SID dataset.
               </p>
             </td>
           </tr>
@@ -286,8 +291,8 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/transfer-learning" target="_blank"><h3>Image Classification</h3></a>
               <p>
-                Leveraged transfer learning by fine-tuning the pre-trained VGG-16 model to classify monkey species. Achieved an 
-                accuracy increase of 40% on the sparse training dataset having 10 classes and 140 images per class.
+                Increased the accuracy by 40% on monkey species classification task by leveraging transfer learning to fine‐tune the pre‐
+                trained VGG‐16 model. Trained the model on small dataset having 10 classes and 140 images per class.
               </p>         
             </td>
           </tr>
@@ -299,11 +304,13 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/steering_control_using_cnn" target="_blank"><h3>CNN Steering Control</h3></a>
               <p>
-                Designed a CNN to learn steering angle from the output of the camera attached to the autonomous vehicle.       
+                Designed a CNN to learn steering angle from the output of the camera attached to the autonomous vehicle. Generated a
+                custom dataset by manually driving the car in simulator. Obtained an accuracy of 86%
+                <!-- Designed a CNN to learn steering angle from the output of the camera attached to the autonomous vehicle.        -->
               </p>
-              <p>
+              <!-- <p>
                 Created a custom dataset by manually running the car on laps using Udacity’s self-driving car simulator. Resulted in a testing accuracy of 86%.
-              </p>
+              </p> -->
             </td>
           </tr>
 
@@ -314,7 +321,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/hand-written-digit-recognition" target="_blank"><h3>Hand-written digit recognition</h3></a>
               <p>
-                Implemented Linear SVM, Kernel SVM with linear, polynomial, and RBF kernels, Logistic Regression, and LeNet-5 CNN architecture on the MNIST dataset in Python to 
+                Implemented Linear SVM, Kernel SVM with linear, polynomial, and RBF kernels, Logistic Regression, and LeNet-5 CNN architecture on the MNIST dataset to 
                 recognize hand-written digits using any in-built functions and compared their results.
               </p>           
             </td>
@@ -327,7 +334,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/face-recognition" target="_blank"><h3>Face Recognition</h3></a>
               <p>
-                Implemented Bayes' classifier, k-NN, Kernel and Boosted SVM along with dimensionality reduction using PCA and MDA for face recognition and achieved an accuracy of 
+                Implemented Bayes' classifier, k-NN, Kernel and Boosted SVM along with dimensionality reduction using PCA and MDA for face recognition. Achieved an accuracy of 
                 over 70% for each of them.
               </p>
             </td>
@@ -360,7 +367,7 @@
                 Used MoveBase for autonomous navigation, MoveIt for manipulator control, and OpenCV for filtering and object detection.
               </p>
               <p>
-                Maintained software version control using Git, checked build using Travis CI, and achieved a code coverage of 86%.
+                Maintained software version control using Git, checked build using Travis CI, and achieved a code coverage of 80%.
               </p>
             </td>
           </tr>
@@ -372,7 +379,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/Monocular-Human-Position-Estimator" target="_blank"><h3>Human Position Estimator</h3></a>
               <p>
-                Created a software in C++ by Agile Iterative Process with object oriented programming that detects and tracks humansusing the pre‐trained HOG descriptor and SVM 
+                Created a software in C++ by Agile Iterative Process with object-oriented programming that detects and tracks humans using the pre‐trained HOG descriptor and SVM 
                 detector of OpenCV.
               </p>
               <p>
@@ -387,6 +394,75 @@
         <br>
         <br>
 
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Robotics Hardware Project</heading>           
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/drone.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a><h3></h3>Voxl m500 drone</h3></a>
+              <!-- <a href="https://github.com/abhijitmahalle/robot-path-planning" target="_blank"><h3>Voxl m500 drone</h3></a> -->
+              <p>
+                Developed a pipeline for real‐time detection and tracking of humans using monocular camera and YOLO‐v5 classifier. Used
+                1D Lidar sensor for depth sensing. Programmed PD controllers for precise yaw and depth control of the drone.
+              </p>
+                Constructed a ROS node for off‐board position control of drone to autonomously follow a moving April tag, move through
+                set way‐points, and to move in a figure‐of‐eight.
+              </p>
+            </td>
+          </tr>
+
+          <!-- <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/A_star.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/A-star_on_turtlebot" target="_blank"><h3>A* Algorithm</h3></a>
+              <p>
+                Implemented A* algorithm on a point robot and ROS Turtlebot considering its non-holonomic constraints.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/dijkstra.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/dijkstra" target="_blank"><h3>Dijkstra's Algorithm</h3></a>
+              <p>
+                Implemented Dijkstra's algorithm on a point robot to find the obstacle-free optimal path.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/8_puzzle_solver.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/8_puzzle_solver" target="_blank"><h3>8-puzzle solver using BFS</h3></a>
+              <p>
+                Solved a 8-puzzle problem using Breadth First Search.
+              </p>
+            </td>
+          </tr> -->
+        </tbody>
+
+        <br>
+        <br>
+        <br>
+
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -403,7 +479,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/robot-path-planning" target="_blank"><h3>Robot Path Planning</h3></a>
               <p>
-                Implemented BFS, Dijkstra, A*, and Real Time-RRT* algorithms on differential-drive robots in Python.
+                Implemented BFS, Dijkstra, A*, and Real Time-RRT* algorithms on differential-drive robot like ROS TurtleBot.
               </p>
             </td>
           </tr>
