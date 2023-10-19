@@ -44,6 +44,28 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>EXPERIENCE</heading>           
+          </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>       
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/sfm.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="https://github.com/abhijitmahalle/structure-from-motion" target="_blank"><h3>Structure from Motion</h3></a>
+              <p>
+                Reconstructed a 3D scene and simultaneously obtained camera poses from a set of images using
+                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point (Pnp), bundle-adjustment, linear and non-linear optimization.
+              </p>
+            </td>
+          </tr>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Computer Vision / Machine Learning Projects</heading>           
@@ -170,15 +192,16 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/AR-Tag-Detection" target="_blank"><h3>April tag detection and tracking</h3></a>
               <p>
-                Detected and tracked an April Tag in a video sequence by background removal using Fast Fourier Transform and Harris corner detection. Decoded the detected tag by 
-                identifying its position and orientation using homography.
+                Detected and tracked an April tag in a video sequence by background removal using Fast Fourier Transform and Harris corner detection. 
+              </p>
+              <p>Decoded the detected April tag by identifying its position and orientation using homography.
               </p>
               <p>
                 Superimposed a custom image and placed a 3D virtual cube on the detected April tag using homography, calibration, and projection matrices.
               </p>
             </td>
           </tr>
-
+         
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/curved_lane_detection.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -186,8 +209,11 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Lane detection and turn prediction</h3></a>
               <p>
-                Detected straight and curved road lanes mimicking the lane departure warning system in autonomous vehicles using hough transform for line detection, homography, 
-                polynomial curve fitting using sliding window technique. Predicted the turn by calculating the radius of curvature of the detected lane.
+                Detected straight and curved road lanes in a video sequence mimicking the lane departure warning system in autonomous vehicles using hough transform for line detection, homography to get
+                bird‐eye’s view, polynomial curve fitting using sliding window technique. 
+              </p>
+              <p>
+                Predicted the turn by calculating the radius of curvature of the detected lane.
               </p>
             </td>
           </tr>
@@ -241,7 +267,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/lane-detection" target="_blank"><h3>Multiple human detection and tracking</h3></a>
               <p>
-                Resulted in a Multi-Object Tracking accuracy of 69.1 on multi‐human tracking task by implementing a one‐shot CNN tracker with two independent branches for 
+                Resulted in a Multi-Object Tracking Accuracy of 0.691 on multi‐human tracking task by implementing a one‐shot CNN tracker with two independent branches for 
                 detection and re‐identification tasks. Jointly optimized the network for two tasks.
               </p>
               <!-- <p>
@@ -367,7 +393,7 @@
                 Used MoveBase for autonomous navigation, MoveIt for manipulator control, and OpenCV for filtering and object detection.
               </p>
               <p>
-                Maintained software version control using Git, checked build using Travis CI, and achieved a code coverage of 80%.
+                Maintained software version control using Git, checked build using Travis CI, and attained a code coverage of 80%.
               </p>
             </td>
           </tr>
@@ -383,7 +409,7 @@
                 detector of OpenCV.
               </p>
               <p>
-                Designed unit tests using Google Test, maintained software version control using Git, checked build using Travis CI, and achieved a code coverage of 91%.
+                Designed unit tests using Google Test, maintained software version control using Git, checked build using Travis CI, and attained a code coverage of 91%.
               </p>
             </td>
           </tr>
@@ -409,11 +435,12 @@
               <img src="images/drone.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>Voxl m500 drone</h3>
+              <h3>Hands-on Aerial Robotics</h3>
               <!-- <a href="https://github.com/abhijitmahalle/robot-path-planning" target="_blank"><h3>Voxl m500 drone</h3></a> -->
               <p>
-                Developed a pipeline for real‐time detection and tracking of humans using monocular camera and YOLO‐v5 classifier. Used
-                1D Lidar sensor for depth sensing. Programmed PD controllers for precise yaw and depth control of the drone.
+                Developed a C++ pipeline for real‐time detection and tracking of humans using monocular camera and YOLO‐v5 classifier. 
+              </p>
+              <p>Used 1D LiDAR sensor for depth sensing. Programmed PD controllers for precise yaw and depth control of the drone.
               </p>
                 Constructed a ROS node for off‐board position control of drone to autonomously follow a moving April tag, move through
                 set way‐points, and to move in a figure‐of‐eight.
@@ -421,6 +448,7 @@
             </td>
           </tr>
 
+          
           <!-- <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/A_star.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -479,7 +507,7 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <a href="https://github.com/abhijitmahalle/robot-path-planning" target="_blank"><h3>Robot Path Planning</h3></a>
               <p>
-                Implemented BFS, Dijkstra, A*, and Real Time-RRT* algorithms on differential-drive robot like ROS TurtleBot.
+                Implemented BFS, Dijkstra, A*, and Real Time-RRT* algorithms on differential-drive robot ROS TurtleBot.
               </p>
             </td>
           </tr>
