@@ -53,14 +53,27 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>       
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="images/sfm.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
+            </td> -->
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <a href="https://github.com/abhijitmahalle/structure-from-motion" target="_blank"><h3>Structure from Motion</h3></a>
+              <a href="https://prg.cs.umd.edu/" target="_blank"><h3>Perception and Robotics Group, UMD</h3></a>
               <p>
-                Reconstructed a 3D scene and simultaneously obtained camera poses from a set of images using
-                their feature point correspondence, epipolar geometry, triangulation, Persepective-n-Point (Pnp), bundle-adjustment, linear and non-linear optimization.
+                Achieved an IoU score of 0.75 for segmentation and Average Endpoint Error of 0.15 m/s for motion estimation task by
+                training two encoder‐decoder networks to estimate scene depth, camera and object poses from the event camera output.
+              </p>
+              <p>
+                Combined the depth and pose estimates to generate optical flow to jointly optimize the two networks by unsupervised
+                learning.
+              </p>
+              <p>
+                Assisted in creating a real‐world indoor ground‐truth dataset by fusing data‐streams from 3 event cameras, classical camera, and 2 IMUs to train VIO and SLAM deep learning models.
+              </p>
+              <p>
+                Used Vicon motion capture system to get ground‐truth object poses and Mujuco simulator to generate ground‐truth depth and segmentation masks.
+              </p>
+              <p>
+                Constructed a pipeline to calibrate event and classical cameras simultaneously by reconstructing grayscale images from the event‐stream using deep neural network.
               </p>
             </td>
           </tr>
